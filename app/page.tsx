@@ -1,103 +1,61 @@
+import Link from "next/link";
 import Image from "next/image";
+
+// Make sure the Navbar component exists at ../components/Navbar.tsx or update the path below if needed
+// Update the import path if Navbar is located elsewhere, e.g.:
+// import Navbar from "./components/Navbar";
+// import Navbar from "../components/navbar";
+// import Navbar from "../Navbar";
+// Make sure the path matches the actual file location and casing.
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import HeroSlider from "./components/HeroSlider";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div>
+      <Navbar></Navbar>
+      
+      <HeroSlider/>
+      <div className="text-center text-white text-xl italic py-12 bg-red-500">
+        <i>"Membangun dengan Kualitas, Berkarya dengan Integritas"</i>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      {/* ABOUT US SECTION */}
+        <section className="py-16 px-8 bg-white flex flex-col md:flex-row items-center gap-8">
+          <div className="md:w-1/2 ml-15">
+            <h2 className="text-4xl font-bold mb-20">Tentang Kami</h2>
+              <p className="mb-4 text-gray-800">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+                odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+                quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+              </p>
+              <p className="text-gray-700 mb-6">
+                Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
+                massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu
+                ad litora torquent per conubia nostra, per inceptos himenaeos.
+              </p>
+              <Link
+                href="about"
+                className="mt-6 inline-block border border-red-500 text-red-500 font-bold px-6 py-2 rounded-full hover:bg-red-500 hover:text-white transition"
+              >
+                Selengkapnya →
+              </Link>
+          </div>
+
+            <div className="md:w-1/2 flex justify-center items-center">
+            <div className="-mr-10 w-150 h-100 rounded-lg overflow-hidden relative">
+              <Image
+              src="/assets/bg1.jpg"
+              alt="Deskripsi gambar"
+              fill
+              className="object-cover rounded-lg"
+              />
+            </div>
+            </div>
+        </section>
+      <Link href="about">Ke halaman about</Link>
+      <Footer></Footer>
     </div>
   );
 }
