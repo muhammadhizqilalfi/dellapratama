@@ -39,7 +39,7 @@ export default function Footer() {
             Portofolio
           </Link>
           <Link href="contact" className="hover:text-blue-900">
-            Contact Us
+            Kontak
           </Link>
         </nav>
 
