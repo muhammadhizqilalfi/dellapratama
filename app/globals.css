@@ -49,4 +49,5 @@ body {
 .swiper-pagination-bullet-active {
   background: #ef4444 !important; /* merah (Tailwind red-500) */
   width: 50px !important;   /* panjang */
+  transition: ease-in-out 0.3s;
 } 

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({
+const workSans = Work_Sans({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
   variable: "--font-poppins",
@@ -11,7 +11,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "PT. Della Pratama",
-  description: "Website Resmmi PT. Della Pratama",
+  description: "Website Resmi PT. Della Pratama",
   icons: {
     icon: "/favicon.ico",
   },
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} antialiased`}
+        className={`${workSans.variable} antialiased`}
       >
         {children}
       </body>
