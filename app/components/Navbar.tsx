@@ -41,7 +41,7 @@ export default function Header() {
       {/* Navbar */}
       <nav
         className={`w-full shadow-sm transition-all duration-300 ${
-          shrink ? "bg-white py-1" : "bg-transparent py-2"
+          shrink ? "bg-white py-0.5" : "bg-transparent py-1"
         }`}
       >
         <div className="container mx-auto flex justify-between items-center px-4">
@@ -103,7 +103,7 @@ export default function Header() {
             <div className="relative w-6 h-6">
               <div
                 className={`absolute left-0 top-1/2 w-6 h-[2px] bg-current transform transition-all duration-500 ease-in-out ${
-                  openMenu ? "rotate-45 -translate-y-1" : "-translate-y-2"
+                  openMenu ? "rotate-45" : "-translate-y-2"
                 }`}
               />
               <div
@@ -113,7 +113,7 @@ export default function Header() {
               />
               <div
                 className={`absolute left-0 top-1/2 w-6 h-[2px] bg-current transform transition-all duration-500 ease-in-out ${
-                  openMenu ? "-rotate-45 translate-y-1" : "translate-y-2"
+                  openMenu ? "-rotate-45" : "translate-y-2"
                 }`}
               />
             </div>
@@ -125,7 +125,7 @@ export default function Header() {
           className={`md:hidden flex flex-col items-start gap-2 py-2 px-3 transition-all duration-500 ease-in-out
             ${
               openMenu
-                ? "max-h-screen opacity-100 bg-white/80 backdrop-blur-md rounded-lg"
+                ? "max-h-screen opacity-100 bg-white-900 backdrop-blur-lg rounded-lg"
                 : "max-h-0 opacity-0 overflow-hidden"
             }
           `}
@@ -138,7 +138,7 @@ export default function Header() {
                 href={item.href}
                 onClick={() => setOpenMenu(false)}
                 className={`w-full px-5 py-2 rounded-lg transition-all duration-300
-                  ${isActive ? "text-blue-900 font-semibold bg-blue-100" : ""}
+                  ${isActive ? "text-white font-semibold bg-blue-900" : ""}
                   ${
                     shrink
                       ? "text-black hover:text-blue-900 hover:bg-blue-100"

@@ -17,10 +17,7 @@ export default function Footer() {
           />
           <div className="text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed">
             <p>
-              <span className="font-semibold">Alamat :</span> Jalan Cut Meutia, 2. Matang Kuli, Aceh Utara, Aceh, ID
-            </p>
-            <p>
-              <span className="font-semibold">Telp :</span> (0620) 8212 8309
+              <span className="font-semibold">Alamat :</span> Jalan Cut Meutia, 2. Matang Kuli, <br /> Aceh Utara, Aceh, ID
             </p>
           </div>
         </div>
