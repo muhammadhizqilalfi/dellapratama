@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
+# Host
+Host: https://dellapratama.com
+
+# Sitemaps
 Sitemap: https://dellapratama.com/sitemap.xml

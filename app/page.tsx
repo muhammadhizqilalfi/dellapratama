@@ -58,7 +58,7 @@ export default function Home() {
       <Carousel />
 
       <div className="text-center text-gray-600 text-lg py-4 mt-10">
-        <p className="text-2xl sm:text-3xl md:text-4xl font-bold px-4 sm:px-0">
+        <p className="text-2xl sm:text-3xl md:text-4xl font-bold px-4 sm:px-0 mb-5">
           Informasi lebih lengkap mengenai perusahaan
         </p>
       </div>
