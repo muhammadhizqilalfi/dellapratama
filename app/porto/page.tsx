@@ -20,6 +20,9 @@ const projects = [
       "/assets/porto2.jpg",
       "/assets/porto3.jpg",
       "/assets/porto4.jpg",
+      "/assets/porto5.jpg",
+      "/assets/porto6.jpg",
+      "/assets/porto7.jpg",
     ],
   },
 ];
