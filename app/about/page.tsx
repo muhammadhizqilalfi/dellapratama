@@ -30,6 +30,7 @@ export default function CompanyProfile() {
           className="w-full h-48 sm:h-64 md:h-72 object-cover"
         />
         <div className="absolute inset-0 bg-black/50" />
+
         <div
           className="absolute bottom-0 left-1/2 -translate-x-1/2 
                         bg-red-500 text-white w-72 sm:w-80 h-10 sm:h-12 

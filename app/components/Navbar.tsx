@@ -32,7 +32,7 @@ export default function Header() {
         <div className="hidden md:block bg-blue-900 text-white text-sm py-1">
           <div className="container mx-auto flex justify-end gap-10 px-4">
             <span>Aceh Utara - Indonesia</span>
-            <span>Email: ptdella2@gmail.com</span>
+            <span>E-mail: ptdella2@gmail.com</span>
             <span>Telp: +62 852-6081-0000</span>
           </div>
         </div>
