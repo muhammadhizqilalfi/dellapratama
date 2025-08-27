@@ -15,6 +15,27 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  metadataBase: new URL("https://dellapratama.com"),
+  keywords: [
+    "konstruksi",
+    "supplier",
+    "jasa",
+    "proyek",
+    "Della Pratama",
+    "dellapratama",
+    "dellapratama.com",
+    "Della",
+    "della",
+    "pratama",
+    "Pratama",
+    "PT.Della Pratama",
+    "web della pratama",
+    "website della pratama",
+    "web dellapratama",
+    "website dellapratama",
+  ],
+  authors: [{ name: "PT. Della Pratama" }],
+  creator: "PT. Della Pratama",
 };
 
 export default function RootLayout({
