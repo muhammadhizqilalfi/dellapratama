@@ -8,9 +8,13 @@ const projects = [
     title: "Pekerjaan Pembangunan Gedung Olahraga",
     image: "/assets/porto1.jpg",
   },
-  { id: 2, title: "Proyek 2", image: "/assets/porto1.jpg" },
-  { id: 3, title: "Proyek 3", image: "/assets/porto1.jpg" },
-  { id: 4, title: "Proyek 4", image: "/assets/porto1.jpg" },
+  {
+    id: 2,
+    title: "Pengelolaan Parkir pada RSU Sakinah Lhokseumawe",
+    image: "/assets/porto2.jpg",
+  },
+  //{ id: 3, title: "Proyek 3", image: "/assets/porto1.jpg" },
+  // { id: 4, title: "Proyek 4", image: "/assets/porto1.jpg" },
 ];
 
 export default function PortfolioCarousel() {
@@ -79,14 +83,14 @@ export default function PortfolioCarousel() {
             if (index === current) {
               position = "z-20 opacity-100 scale-100"; // aktif
             } else if (
-              index ===
+            index ===
               (current - 1 + projects.length) % projects.length
             ) {
               position =
-                "z-10 opacity-60 -translate-x-16 sm:-translate-x-28 md:-translate-x-40 scale-90"; // kiri
+                "z-10 opacity-60 translate-x-16 sm:translate-x-28 md:translate-x-40 scale-90"; // kiri
             } else if (index === (current + 1) % projects.length) {
               position =
-                "z-10 opacity-60 translate-x-16 sm:translate-x-28 md:translate-x-40 scale-90"; // kanan
+                "z-10 opacity-60 -translate-x-16 sm:-translate-x-28 md:-translate-x-40 scale-90"; // kanan
             }
 
             return (
