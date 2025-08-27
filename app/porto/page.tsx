@@ -22,12 +22,6 @@ const projects = [
       "/assets/porto4.jpg",
     ],
   },
-  { id: 3, title: "Proyek C", images: ["/assets/porto1.jpg"] },
-  { id: 4, title: "Proyek D", images: ["/assets/porto1.jpg"] },
-  { id: 5, title: "Proyek E", images: ["/assets/porto1.jpg"] },
-  { id: 6, title: "Proyek F", images: ["/assets/porto1.jpg"] },
-  { id: 7, title: "Proyek G", images: ["/assets/porto1.jpg"] },
-  { id: 8, title: "Proyek H", images: ["/assets/porto1.jpg"] },
 ];
 
 export default function Porto() {

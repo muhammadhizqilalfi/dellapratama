@@ -13,8 +13,6 @@ const projects = [
     title: "Pengelolaan Parkir pada RSU Sakinah Lhokseumawe",
     image: "/assets/porto2.jpg",
   },
-  //{ id: 3, title: "Proyek 3", image: "/assets/porto1.jpg" },
-  // { id: 4, title: "Proyek 4", image: "/assets/porto1.jpg" },
 ];
 
 export default function PortfolioCarousel() {
