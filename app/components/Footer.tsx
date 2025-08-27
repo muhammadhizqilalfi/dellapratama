@@ -36,10 +36,10 @@ export default function Footer() {
             <span className="font-semibold">Alamat :</span> Jalan Cut Meutia, 2. Matang Kuli, <br /> Aceh Utara, Aceh, Indonesia
           </p>
           <a
-            href="mailto:ptdella2@gmail.com"
+            href="mailto:pt.della2@gmail.com"
             className="hover:text-blue-500 transition-colors"
           >
-            E-mail: ptdella2@gmail.com
+            E-mail: pt.della2@gmail.com
           </a>
           <a
             href="https://wa.me/6285260810000"

@@ -126,10 +126,10 @@ export default function Contact() {
           <p className="mt-2">
             <span className="font-bold">E-mail :</span>{" "}
             <a
-              href="mailto:ptdella2@gmail.com"
+              href="mailto:pt.della2@gmail.com"
               className="hover:underline text-blue-500"
             >
-              ptdella2@gmail.com
+              pt.della2@gmail.com
             </a>
           </p>
         </div>
