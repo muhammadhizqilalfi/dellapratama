@@ -8,6 +8,7 @@ export default function MetaHead() {
       <meta name="keywords" content="konstruksi, supplier, jasa, proyek, Della Pratama, dellapratama, dellapratama.com, Della, della, pratama, Pratama, PT.Della Pratama" />
       <meta name="author" content="PT. Della Pratama" />
       <link rel="canonical" href="https://dellapratama.com" />
+      <meta name="google-site-verification" content="1VtV0YqtUlyU6F654S6_OxmEH-GiDnPAtP609Ad9wLw" />
       {/* Open Graph */}
       <meta property="og:title" content="PT. Della Pratama" />
       <meta property="og:description" content="Konstruksi, supplier, dan jasa. Solusi inovatif untuk proyek Anda." />
