@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-black text-white px-6 py-10 relative">
       <div className="container mx-auto flex flex-col md:flex-row md:justify-between gap-10">
         
-        {/* 🔹 Kiri: Logo + Alamat */}
+        {/* Logo + Alamat */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4">
           <Image
             src="/assets/dp_3.png"
@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* 🔹 Tengah: Quick Links */}
+        {/* Quick Links */}
         <div className="flex flex-col text-center md:text-left gap-3">
           <h3 className="text-white font-bold text-lg mb-2">Quick Links</h3>
           <Link href="/" className="hover:text-blue-500 transition-colors">Beranda</Link>
@@ -31,7 +31,7 @@ export default function Footer() {
           <Link href="/contact" className="hover:text-blue-500 transition-colors">Kontak</Link>
         </div>
 
-        {/* 🔹 Kanan: Kontak Cepat */}
+        {/*  Kontak  */}
         <div className="flex flex-col text-center md:text-left gap-3">
           <h3 className="text-white font-bold text-lg mb-2">Kontak Cepat</h3>
           <a
@@ -51,10 +51,10 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* 🔹 Garis pemisah */}
+      {/* Border */}
       <div className="w-full border-t border-white/20 my-6"></div>
 
-      {/* 🔹 Copyright */}
+      {/* Copyright */}
       <p className="text-gray-400 text-xs sm:text-sm md:text-base text-center">
         ©2025 - PT. Della Pratama | All Rights Reserved.
       </p>

@@ -36,7 +36,7 @@ export default function CompanyProfile() {
                         flex items-center justify-center 
                         rounded-t-full font-semibold text-sm sm:text-lg"
         >
-          TENTANG
+          TENTANG KAMI
         </div>
       </div>
 
@@ -63,9 +63,9 @@ export default function CompanyProfile() {
         ))}
       </div>
 
-      {/* Content */}
+      {/* Konten */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* PROFIL */}
+        {/* Profil */}
         {activeTab === "profil" && (
           <section className="py-8 sm:py-16 space-y-8 sm:space-y-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-start">
@@ -106,7 +106,7 @@ export default function CompanyProfile() {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-1 gap-2 sm:gap-4 text-xs sm:text-sm">
                 <p>
-                  <span className="font-medium">Akte Pendirian No :</span> 80
+                  <span className="font-medium">Akte Pendirian :</span> No. 80
                   Tgl. 28 Mei 2004
                 </p>
                 <p>
@@ -114,30 +114,30 @@ export default function CompanyProfile() {
                   C-16267 HT.01.01 TH.2004
                 </p>
                 <p>
-                  <span className="font-medium">Akte Perubahan :</span> 25 Tgl
-                  20 Juli 2020
+                  <span className="font-medium">Akte Perubahan :</span> No. 25
+                  Tgl 20 Juli 2020
                 </p>
                 <p>
                   <span className="font-medium">SK Menkumham :</span>{" "}
                   AHU-AH.01.03-0315687
                 </p>
                 <p>
-                  <span className="font-medium">NPWP :</span> 002102479 9410
-                  2000
+                  <span className="font-medium">NPWP : </span>
+                  0021 2479 9410 2000
                 </p>
                 <p>
                   <span className="font-medium">PKP :</span>{" "}
                   PEM-0221/WPJ.01/KP.0203/2004
                 </p>
                 <p>
-                  <span className="font-medium">NIB :</span> 9020202551634
+                  <span className="font-medium">NIB :</span> 9120202551634
                 </p>
               </div>
             </div>
           </section>
         )}
 
-        {/* VISI & MISI */}
+        {/* V & M */}
         {activeTab === "visi" && (
           <section className="py-8 sm:py-16 space-y-8 sm:space-y-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
@@ -204,7 +204,7 @@ export default function CompanyProfile() {
           </section>
         )}
 
-        {/* LEGALITAS */}
+        {/* Legalitas */}
         {activeTab === "legalitas" && (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-20">
             {[
@@ -239,7 +239,7 @@ export default function CompanyProfile() {
           </div>
         )}
 
-        {/* STRUKTUR */}
+        {/* Struktur */}
         {activeTab === "struktur" && (
           <div className="text-center">
             <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">

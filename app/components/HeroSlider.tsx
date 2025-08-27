@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 export default function HeroSlider() {
   return (
     <div className="relative w-full h-screen">
-      {/* SLIDER GAMBAR */}
+      {/* SLIDER */}
       <Swiper
         modules={[Pagination, Autoplay]}
         pagination={{

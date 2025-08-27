@@ -18,7 +18,9 @@ const projects = [
 ];
 
 export default function Porto() {
-  const [selectedProject, setSelectedProject] = useState<null | typeof projects[0]>(null);
+  const [selectedProject, setSelectedProject] = useState<
+    null | (typeof projects)[0]
+  >(null);
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -95,15 +97,7 @@ export default function Porto() {
             className="bg-white rounded-lg shadow-lg max-w-3xl w-full overflow-hidden relative"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Tombol close */}
-            <button
-              onClick={() => setSelectedProject(null)}
-              className="absolute top-3 right-3 bg-white text-black px-2 py-1 rounded-full hover:bg-red-600 transition"
-            >
-              ✕
-            </button>
-
-            {/* Isi modal */}
+            {/* Konten Modal */}
             <Image
               src={selectedProject.img}
               alt={selectedProject.title}
@@ -112,9 +106,19 @@ export default function Porto() {
               className="w-full max-h-[70vh] object-cover"
             />
             <div className="p-4 text-center">
-              <h3 className="text-lg sm:text-xl font-bold">{selectedProject.title}</h3>
+              <h3 className="text-lg sm:text-xl font-bold">
+                {selectedProject.title}
+              </h3>
             </div>
           </div>
+
+          {/* Tombol close */}
+          <button
+            className="absolute bottom-15 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:bg-gray-200 transition"
+            onClick={() => setSelectedProject(null)}
+          >
+            ✕
+          </button>
         </div>
       )}
 

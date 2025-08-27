@@ -72,7 +72,7 @@ export default function PortfolioCarousel() {
           </svg>
         </button>
 
-        {/* Container untuk semua card */}
+        {/* Container card*/}
         <div className="flex items-center justify-center relative w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-3xl h-[350px] sm:h-[380px] md:h-[400px]">
           {projects.map((project, index) => {
             let position = "opacity-0 scale-75"; // default
@@ -152,7 +152,7 @@ export default function PortfolioCarousel() {
             onClick={() => setSelectedProject(null)}
           ></div>
 
-          {/* Isi modal hanya gambar + tombol X */}
+          {/* Modal Content*/}
           <div className="relative max-w-4xl w-full mx-4 rounded-lg overflow-hidden z-10 flex flex-col items-center">
             <div className="relative w-full h-[300px] sm:h-[500px] md:h-[600px]">
               <Image
@@ -163,7 +163,7 @@ export default function PortfolioCarousel() {
               />
             </div>
 
-            {/* Tombol close di tengah bawah */}
+            {/* Tombol close*/}
             <button
               className="mt-4 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:bg-gray-200 transition"
               onClick={() => setSelectedProject(null)}

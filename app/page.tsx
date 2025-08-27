@@ -15,7 +15,7 @@ export default function Home() {
         <i>"Membangun dengan Kualitas, Berkarya dengan Integritas"</i>
       </div>
 
-      {/* ABOUT US SECTION */}
+      {/* About Us */}
       <section className="py-10 px-4 sm:px-8 md:px-20 flex flex-col md:flex-row items-center gap-8">
         <div className="md:w-1/2">
           <h2 className="text-3xl sm:text-4xl md:text-4xl font-semibold mb-6 sm:mb-8">
